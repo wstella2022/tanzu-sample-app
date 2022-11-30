@@ -40,7 +40,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: index.docker.io/wstella/tanzu-java-web-app-accelerator-system@sha256:42575dfd7b5b8dac8bc052d589b45361f5716416970621f5c1aa150a4dbcbba8
+        image: index.docker.io/wstella/tanzu-java-web-app-accelerator-system@sha256:6c7a8db027ded454f2134d9c6f9c900b2b885393d2c1791370a94fc92d59051b
         livenessProbe:
           httpGet:
             path: /livez
